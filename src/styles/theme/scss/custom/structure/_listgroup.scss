@@ -1,0 +1,18 @@
+.listgroup-custom {
+  .list-group {
+    .list-group-item {
+      border: none;
+      padding: 0rem 0.3rem;
+      color: $orange;
+      @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+          border-right: 1px solid $dark;
+        }
+        &:hover {
+          border-bottom-color: $orange;
+        }
+      }
+      border-bottom: 1px solid transparent;
+    }
+  }
+}

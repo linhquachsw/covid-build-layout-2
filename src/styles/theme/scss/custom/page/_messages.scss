@@ -1,0 +1,95 @@
+//
+// message.scss
+//
+.message-page.modal-open .modal {
+    display: block;
+  }
+.message-page .modal-backdrop.fade {
+    opacity: .7 !important;
+}
+.message-modal .modal-header {
+    display: block;
+    padding-bottom: 5px;
+}
+.message-modal .modal-body {
+    padding-top: 10px;
+}
+.m-reply {
+    float: right;
+    margin-top: -20px;
+    color: #428BCA;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+.message-item {
+    cursor: pointer;
+}
+
+.btn_header_container {
+    margin: 0 0 15px 0;
+}
+
+div[mgs-status="56001"] {
+    background: rgba(242,245,245,0.8);
+    color: #202124;
+    padding-right: 5px;
+}
+
+div[mgs-status="56000"] {
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+.msg-detail-title {
+    color: #333333;
+    font-size: 14pt;
+    font-weight: 400;
+}
+.msg-detail-user {
+    color: #333333;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.message-page .border-dark{
+    border-color: rgb(153, 153, 153) !important;
+}
+#toIds .css-1pahdxg-control:hover {
+    border-color: #c1c9d0;
+    box-shadow: inherit;
+}
+#toIds .css-1pahdxg-control {
+    border-color: #dee2e6;
+    box-shadow: inherit;
+}
+#toIds .css-yk16xz-control, #toIds .css-1pahdxg-control {
+    border-bottom-left-radius: initial;
+    border-top-left-radius: initial;
+    border-left: none;
+    margin-left: -0.3px;
+
+}
+.message-modal .modal-header .close {
+    top: 1rem !important;
+    position: absolute;
+    right: 1rem;
+}
+.message-modal .message-body {
+    white-space: pre-line;
+    margin-bottom: 0.5rem;
+    max-height: 500px;
+    overflow: auto;
+}
+@media (max-width: 992px) {
+    .setting-box {
+        padding-top: 0.75rem !important;
+    }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .btn_header_container>.btn{
+        margin-bottom: 15px;
+    }
+    .btn_header_container {
+        display: grid;
+    }
+}

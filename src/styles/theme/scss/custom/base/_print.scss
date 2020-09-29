@@ -1,0 +1,61 @@
+//
+// print.scss
+//
+
+@page {
+  size: auto; /* auto is the initial value */
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+
+  .print-previewer {
+    * {
+      overflow: hidden;
+    }
+  }
+
+  .left-side-menu,
+  .right-bar,
+  .page-title-box,
+  .navbar-custom,
+  .footer {
+    display: none;
+  }
+
+  .content-page,
+  .right-bar,
+  .content,
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+  }
+
+  body {
+    background-color: #fff;
+  }
+
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  .no-print, .no-print * {
+    display: none !important;
+  }
+}

@@ -1,0 +1,496 @@
+.svbs_window {
+  position: fixed;
+  bottom: 3px;
+  right: 10px;
+  background-color: cadetblue;
+  padding: 1px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.svbs_window_title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+
+.svbs_window_content {
+  padding: 8px;
+  margin: 0;
+}
+
+.svbs_window_title a,
+.svbs_window_title a:link,
+.svbs_window_title a:visited {
+  text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+  color: black;
+}
+
+.svbs_main.svbs_frame .svbs_container {
+  max-width: 80%;
+  margin: auto;
+  padding: 0 1em;
+}
+.svbs_main.svbs_frame .svbs_container .svbs_header {
+  padding-top: 5em;
+  padding-bottom: 1em;
+}
+
+.svbs_main .svbs_progress {
+  background-color: #e7e7e7;
+  margin-bottom: 2em;
+}
+.svbs_main .svbs_progress_bar {
+  background-color: #1ab394;
+}
+.svbs_main .svbs_q_erbox:not([style*='display: none']):not([style*='display:none']) {
+  border: 1px solid #ed5565;
+  background-color: #fcdfe2;
+  color: #ed5565;
+}
+.svbs_main .svbs_q_erbox:not([style*='display: none']):not([style*='display:none']) + input,
+.svbs_main .svbs_q_erbox:not([style*='display: none']):not([style*='display:none']) + textarea,
+.svbs_main .svbs_q_erbox:not([style*='display: none']):not([style*='display:none']) + .svbs_select_wrapper select {
+  border: 1px solid #ed5565;
+}
+.svbs_main .svbs_q_erbox:not([style*='display: none']):not([style*='display:none']) + input:focus,
+.svbs_main .svbs_q_erbox:not([style*='display: none']):not([style*='display:none']) + textarea:focus,
+.svbs_main
+  .svbs_q_erbox:not([style*='display: none']):not([style*='display:none'])
+  + .svbs_select_wrapper
+  select:focus {
+  outline: #ed5565 auto 5px;
+}
+.svbs_main table.svbs_q_matrix tr,
+.svbs_main table.svbs_q_matrix_dropdown tr,
+.svbs_main table.svbs_q_matrix_dynamic tr {
+  border-bottom: 1px solid #e7e7e7;
+}
+.svbs_main .svbs_q_m_cell_selected {
+  color: white;
+  background-color: #179d82;
+}
+.svbs_main .svbs_q_rating_item.active .svbs_q_rating_item_text {
+  background-color: #179d82;
+  border-color: #179d82;
+  color: white;
+}
+.svbs_main .svbs_q_rating_item .svbs_q_rating_item_text {
+  border: 1px solid #e7e7e7;
+}
+.svbs_main .svbs_q_rating_item .svbs_q_rating_item_text:hover {
+  border: 1px solid #179d82;
+}
+.svbs_main .svbs_q_imgsel.checked label > div {
+  background-color: #1ab394;
+}
+.svbs_main .sv-boolean__switch {
+  background-color: #1ab394;
+}
+.svbs_main .sv-boolean__slider {
+  background-color: white;
+}
+.svbs_main .sv-boolean__label--disabled {
+  color: rgba(64, 64, 64, 0.5);
+}
+
+.svbs_main hr {
+  border: none;
+}
+.svbs_main input[type='button'],
+.svbs_main button {
+  min-width: 6rem;
+  cursor: pointer;
+}
+.svbs_main .svbs_custom_header {
+  position: absolute;
+  width: 100%;
+  height: 74%;
+  max-height: 275px;
+}
+.svbs_main .svbs_container .svbs_header {
+  padding: 1em;
+}
+.svbs_main .svbs_container .svbs_header h3 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+}
+.svbs_main .svbs_container .svbs_body .svbs_progress {
+  height: 0.3em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_progress .svbs_progress_bar {
+  height: 100%;
+  min-width: 100px;
+  position: relative;
+  margin-top: 2em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_progress .svbs_progress_bar > span {
+  position: absolute;
+  top: -1.5em;
+  display: inline-block;
+  white-space: nowrap;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_page_title {
+  font-size: 1em;
+  margin-top: 0.1em;
+  font-weight: normal;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_title {
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_description {
+  margin-top: -0.6em;
+  min-height: 0.6em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_flow .svbs_q_checkbox_inline,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_flow .svbs_q_radiogroup_inline,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_flow .svbs_q_imagepicker_inline {
+  line-height: 2em;
+  display: inline-block;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q {
+  padding: 0.5em 1em 1.5em 1em;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_panel_dynamic .svbs_q_title {
+  font-weight: normal;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_panel_dynamic .sv-paneldynamic__progress-container {
+  position: relative;
+  margin-right: 250px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.svbs_main
+  .svbs_container
+  .svbs_body
+  .svbs_p_root
+  .svbs_q
+  .svbs_q_erbox:not([style*='display: none']):not([style*='display:none']) {
+  margin: 1em 0;
+  padding: 1em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_other input,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_text_root,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_dropdown_control,
+.svbs_main
+  .svbs_container
+  .svbs_body
+  .svbs_p_root
+  .svbs_q
+  input:not([type='button']):not([type='reset']):not([type='submit']):not([type='image']):not([type='checkbox']):not([type='radio']),
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q select,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q textarea {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1em;
+  line-height: 2em;
+  padding-left: 1em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_other input:focus,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_text_root:focus,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_dropdown_control:focus,
+.svbs_main
+  .svbs_container
+  .svbs_body
+  .svbs_p_root
+  .svbs_q
+  input:not([type='button']):not([type='reset']):not([type='submit']):not([type='image']):not([type='checkbox']):not([type='radio']):focus,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q select:focus,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q textarea:focus {
+  outline: none;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_other input,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_dropdown_control,
+.svbs_main
+  .svbs_container
+  .svbs_body
+  .svbs_p_root
+  .svbs_q
+  input:not([type='button']):not([type='reset']):not([type='submit']):not([type='image']):not([type='checkbox']):not([type='radio']),
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q select {
+  height: calc(2em + 1px);
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q div.svbs_q_text_root,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q div.svbs_q_dropdown_control {
+  min-height: 2.43em;
+  min-width: 7em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q input[type='color'] {
+  min-height: 2em;
+  padding: 0;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q input[type='radio'],
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q input[type='checkbox'] {
+  margin: 0;
+  margin-right: 0.55em;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+  font-size: 1em;
+  margin-top: -0.1em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q input[type='radio']:focus,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q input[type='checkbox']:focus {
+  outline: 1px dotted #1ab394;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_radiogroup.svbs_q_radiogroup_inline:not(:last-child),
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_checkbox.svbs_q_checkbox_inline:not(:last-child),
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_imgsel.svbs_q_imagepicker_inline:not(:last-child) {
+  margin-right: 1.5em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_imgsel label > div {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 4px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_imgsel label > div > img {
+  display: block;
+  pointer-events: none;
+  position: relative;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_radiogroup_clear {
+  margin-top: 0.5em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_checkbox_inline,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_radiogroup_inline,
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_imagepicker_inline {
+  line-height: 2em;
+  display: inline-block;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q .svbs_q_footer {
+  padding: 1em 0;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root table.svbs_q_matrix .svbs_matrix_dynamic_button,
+.svbs_main .svbs_container .svbs_body .svbs_p_root table.svbs_q_matrix_dropdown .svbs_matrix_dynamic_button,
+.svbs_main .svbs_container .svbs_body .svbs_p_root table.svbs_q_matrix_dynamic .svbs_matrix_dynamic_button {
+  padding: 0.3em 2em;
+}
+@media (min-width: 768px) {
+  .svbs_main .svbs_container .svbs_body .svbs_p_root table.svbs_q_matrix td {
+    min-width: 10em;
+  }
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root table.svbs_q_matrix td .svbs_q_m_label {
+  position: static;
+  display: block;
+  width: 100%;
+}
+.svbs_main
+  .svbs_container
+  .svbs_body
+  .svbs_p_root
+  table.svbs_q_matrix_dropdown
+  .svbs_qcbc
+  .svbs_q_checkbox_control_label {
+  margin-right: 1.5em;
+}
+
+.svbs_main .svbs_container .svbs_body .svbs_p_root fieldset.svbs_qcbc {
+  line-height: 2em;
+  padding-top: 0.1em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_other {
+  margin-left: 1em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_select_column {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 10%;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_rating {
+  line-height: 2em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_rating .svbs_q_rating_item {
+  cursor: pointer;
+  word-spacing: -0.3em;
+  font-weight: normal;
+  display: inline;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_rating .svbs_q_rating_item > * {
+  word-spacing: initial;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_rating .svbs_q_rating_item > * {
+    word-spacing: normal;
+  }
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_rating .svbs_q_rating_item .svbs_q_rating_item_text {
+  display: inline-block;
+  min-width: 2em;
+  padding: 0 0.3em;
+  margin-left: -1px;
+  text-align: center;
+}
+.svbs_main
+  .svbs_container
+  .svbs_body
+  .svbs_p_root
+  .svbs_q_rating
+  .svbs_q_rating_item:not(:first-child)
+  .svbs_q_rating_item_text:not(:hover) {
+  border-left-color: transparent;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_rating .svbs_q_rating_min_text {
+  margin-right: 0.5em;
+}
+.svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_q_rating .svbs_q_rating_max_text {
+  margin-left: 0.5em;
+}
+.svbs_main .svbs_q_image {
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn {
+    display: block;
+    width: 100% !important;
+  }
+
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q .svbs_q_radiogroup_inline,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q .svbs_q_checkbox_inline,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q .svbs_q_imagepicker_inline,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn .svbs_q_radiogroup_inline,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn .svbs_q_checkbox_inline,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn .svbs_q_imagepicker_inline {
+    display: block;
+  }
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dropdown,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dynamic,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dropdown,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dynamic {
+    display: block;
+  }
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix thead,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dropdown thead,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dynamic thead,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix thead,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dropdown thead,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dynamic thead {
+    display: none;
+  }
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix tbody,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix tr,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix td,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dropdown tbody,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dropdown tr,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dropdown td,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dynamic tbody,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dynamic tr,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dynamic td,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix tbody,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix tr,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix td,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dropdown tbody,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dropdown tr,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dropdown td,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dynamic tbody,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dynamic tr,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dynamic td {
+    display: block;
+  }
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dropdown td:before,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix_dynamic td:before,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dropdown td:before,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix_dynamic td:before {
+    content: attr(headers);
+  }
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix td label.svbs_q_m_label,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix td label.svbs_q_m_label {
+    display: inline;
+  }
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_q table.svbs_q_matrix td:after,
+  .svbs_main .svbs_container .svbs_body .svbs_p_root .svbs_row .svbs_qstn table.svbs_q_matrix td:after {
+    content: attr(headers);
+  }
+}
+
+.svbs_main .svbs_qstn .svbs_q_file .sv-visuallyhidden {
+  position: absolute !important;
+  opacity: 0;
+}
+
+.svbs_main .svbs_qstn .svbs_q_file .sv-file__decorator .svbs_q_file_placeholder {
+  margin-left: 1em;
+  display: inline-block;
+}
+
+//==========================================================
+// New style
+.svbs_main {
+  .form-control[disabled],
+  .form-control:disabled {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    border-left-width: 1px !important;
+  }
+
+  .form-control[aria-required='true']:not([disabled]),
+  .custom-select.required,
+  textarea.required {
+    border-left: 5px solid var(--danger);
+  }
+
+  .svbs_q_file_remove {
+    height: 1rem;
+  }
+
+  .custom-select:disabled,
+  .custom-select[disabled],
+  .react-select.required .react-select__control.react-select__control--is-disabled {
+    border-left-width: 1px !important;
+    border-color: transparent !important;
+    background-color: transparent;
+  }
+
+  .custom-file {
+    height: auto;
+  }
+
+  .custom-select:disabled,
+  .custom-select[disabled] {
+    background: none;
+  }
+
+  .react-select__control--is-disabled {
+    .react-select__placeholder,
+    .react-select__indicators {
+      display: none;
+    }
+  }
+
+  .custom-file-input[disabled],
+  .custom-file-input[disabled] + .custom-file-label,
+  .react-select__control--is-disabled .react-select__multi-value__remove {
+    display: none;
+  }
+
+  .react-select__control--is-disabled .react-select__multi-value .react-select__multi-value__label {
+    padding-right: 6px;
+  }
+}
+
+.svbs_q_file_preview img {
+  max-width: 100%;
+}

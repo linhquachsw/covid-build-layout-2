@@ -1,0 +1,57 @@
+// 
+// general.scss
+//
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+// Fix event bubbling on iOS devices
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+    cursor: pointer;
+  }
+}
+
+.table-search{
+  margin-left: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  form {
+    width: 100%;
+  }
+
+  .form-control {
+    border: none;
+    height: 38px;
+    padding-left: 40px;
+    padding-right: 20px;
+    background-color: $bg-topbar;
+    border-top: solid 1px rgb(221, 221, 221);
+    border-bottom: solid 1px rgb(221, 221, 221);
+    border-left: solid 1px rgb(221, 221, 221);
+    border-radius: 0 !important;
+    box-shadow: none;
+  }
+
+  span {
+    //color: rgb(221, 221, 221);
+    z-index: 10;
+    position: absolute;
+    font-size: 20px;
+    line-height: 38px;
+    left: 10px;
+  }
+
+  .input-group-append {
+    margin-left: 0;
+    z-index: 4;
+  }
+}

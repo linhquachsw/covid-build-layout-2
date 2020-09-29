@@ -1,0 +1,42 @@
+//
+// buttons.scss
+//
+
+.btn-rounded {
+  border-radius: 2em;
+}
+
+// Button Shadows
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    // @include button-shadow($value);
+    color: $white;
+  }
+}
+
+.btn-icon {
+  font-weight: $font-weight-normal;
+  color: theme-color('success');
+
+  @include hover() {
+    color: darken(theme-color('success'), 15%);
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+
+  // No need for an active state here
+}
+
+.btn-link:focus,
+.btn-link.focus {
+  box-shadow: none;
+}

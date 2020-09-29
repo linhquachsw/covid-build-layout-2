@@ -1,0 +1,169 @@
+//
+// forms.scss
+//
+
+.form-control-plaintext:focus {
+  outline: none;
+}
+
+// Form elements (Color and Range)
+input.form-control[type='color'],
+input.form-control[type='range'] {
+  min-height: 39px;
+}
+
+// Custom select
+.custom-select.is-invalid,
+.form-control.is-invalid,
+.custom-select:invalid,
+.form-control:invalid,
+.custom-select.is-valid,
+.form-control.is-valid,
+.custom-select:valid,
+.form-control:valid {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+select.form-control {
+  &:not([size]):not([multiple]) {
+    height: $input-height;
+  }
+}
+
+select.form-control-sm {
+  &:not([size]):not([multiple]) {
+    height: $input-height-sm;
+  }
+}
+
+textarea:required,
+input:required {
+  border-left: 5px solid $danger !important;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  background-image: none;
+  border-color: var(--gray);
+  padding-right: 0.75rem;
+}
+
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus {
+  border-color: var(--gray);
+}
+
+.custom-checkbox.indeterminate {
+  .custom-control-input ~ .custom-control-label {
+    &::before {
+      border-color: $custom-checkbox-indicator-indeterminate-border-color;
+      @include gradient-bg($custom-checkbox-indicator-indeterminate-bg);
+      @include box-shadow($custom-checkbox-indicator-indeterminate-box-shadow);
+    }
+    &::after {
+      background-image: escape-svg($custom-checkbox-indicator-icon-indeterminate);
+    }
+  }
+
+  .custom-control-input:disabled {
+    &:checked ~ .custom-control-label::before {
+      background-color: rgba(theme-color('dark'), 0.5);
+    }
+    & ~ .custom-control-label::before {
+      background-color: rgba(theme-color('dark'), 0.5);
+    }
+  }
+}
+
+.custom-checkbox {
+  .custom-control-label {
+    font-weight: 700;
+  }
+  .custom-control-label::before {
+    border-color: theme-color('secondary');
+    border-width: 2px;
+    background: none;
+  }
+
+  .custom-control-label::after {
+    background-size: 65% 65%;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: theme-color('secondary');
+    background-color: transparent;
+  }
+
+  .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    background-color: rgba(theme-color('dark'), 0.3);
+    border-color: theme-color('dark');
+  }
+
+  .custom-control-input:disabled {
+    & ~ .custom-control-label::before {
+      border-color: theme-color('dark');
+    }
+
+    &:checked:not([readonly]) ~ .custom-control-label::after {
+      background-image: escape-svg(
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'><path fill='#{theme-color('dark')}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/></svg>")
+      );
+    }
+
+    &:checked ~ .custom-control-label::before {
+      background-color: rgba(theme-color('dark'), 0.2);
+      border-color: theme-color('dark');
+    }
+
+    &:indeterminate ~ .custom-control-label::before {
+      background-color: rgba(theme-color('dark'), 0.2);
+    }
+  }
+
+  .custom-control-input[readonly] ~ .custom-control-label {
+    cursor: default;
+  }
+
+  .custom-control-input[readonly]:not(:checked) {
+    & ~ .custom-control-label::before {
+      border-color: theme-color('dark') !important;
+      background-color: transparent !important;
+    }
+  }
+
+  .custom-control-input[readonly]:checked {
+    & ~ .custom-control-label::before {
+      border-color: theme-color('secondary') !important;
+      background-color: transparent !important;
+    }
+  }
+}
+
+.custom-file-label::after {
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
+.mt2-sm {
+  @media screen and (max-width: 768px) {
+    margin-top: 0.5rem;
+  }
+}
+
+.mt2-sm-small {
+  @media screen and (max-width: 767px) {
+    margin-top: 0.5rem;
+  }
+}
+
+.max-w2-lg {
+  @media screen and (min-width: 769px) {
+    max-width: 180px;
+  }
+}
+
+label {
+  font-weight: $font-weight-bold;
+}

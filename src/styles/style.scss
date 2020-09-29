@@ -1,0 +1,414 @@
+@import './theme/scss/DefaultTheme.scss';
+// @import url(https://use.fontawesome.com/releases/v5.0.9/css/all.css);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $prop, $abbrev in (width: w, height: h) {
+      @each $size, $length in $sizes {
+        .#{$abbrev}#{$infix}-#{$size} {
+          #{$prop}: $length !important;
+        }
+      }
+    }
+  }
+}
+
+#home {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// react-autosuggest
+.react-autosuggest__container {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+
+  .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.react-autosuggest__input {
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  border-top: solid 1px rgb(221, 221, 221);
+  border-bottom: solid 1px rgb(221, 221, 221);
+  border-left: solid 1px rgb(221, 221, 221);
+  border-radius: 0 !important;
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  text-align: left;
+  cursor: pointer;
+  padding: 0px 5px 0 40px;
+  color: black;
+
+  span {
+    z-index: 10;
+    position: relative;
+    font-size: unset;
+    line-height: unset;
+    left: unset;
+  }
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: #ddd;
+}
+
+.text-danger.form-group > label {
+  color: var(--secondary);
+}
+
+// page transition
+$TIMEOUT: 600ms;
+
+.page-transition-enter {
+  opacity: 0;
+  background-color: white;
+}
+.page-transition-enter-active {
+  opacity: 1;
+  background-color: transparent;
+  transition: opacity $TIMEOUT, background-color $TIMEOUT;
+}
+.page-transition-exit {
+  opacity: 1;
+}
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity $TIMEOUT;
+}
+.loading-indicator-appear,
+.loading-indicator-enter {
+  opacity: 0;
+}
+.loading-indicator-appear-active,
+.loading-indicator-enter-active {
+  opacity: 1;
+  transition: opacity $TIMEOUT;
+}
+
+// react day picker
+
+.dropdown-menu .DayPicker-wrapper {
+  padding-bottom: 0;
+}
+
+.DayPicker-Day {
+  padding: 0.4em !important;
+  min-width: 2.3em;
+  min-height: 2.3em;
+}
+.DayPicker-Footer {
+  text-align: center;
+}
+
+// dayPickerInput Style
+
+.DayPickerInput {
+  display: block !important;
+  + .invalid-feedback {
+    display: block !important;
+  }
+
+  .DayPickerInput-Overlay.menu-right {
+    left: auto !important;
+    right: 0;
+  }
+
+  .DayPickerInput-OverlayWrapper {
+    z-index: 1000 !important;
+  }
+
+  input:not(.form-control-plaintext) {
+    @extend .form-control;
+  }
+}
+
+/* react datepicker */
+.react-datepicker {
+  font-family: inherit !important;
+  font-size: 1rem !important;
+}
+
+.react-datepicker__time-container {
+  width: 110px !important;
+}
+
+.react-datepicker__input-container input.required {
+  border-left: 5px solid $danger !important;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+  width: 110px !important;
+}
+
+.react-datepicker-wrapper {
+  display: block !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  font-size: 1rem !important;
+}
+
+// flexbox suppport common
+
+@for $i from 1 through 20 {
+  .flex-#{$i} {
+    flex: $i !important;
+  }
+}
+
+.long-and-truncated {
+  flex: 1;
+  &,
+  & > * {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// support hover
+.card-cover {
+  .card-upload-container {
+    z-index: 100;
+    background-color: transparent;
+  }
+
+  .upload-icon {
+    width: 50px !important;
+    height: 50px !important;
+    visibility: hidden !important;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 25%;
+  }
+
+  &:hover {
+    .card-upload-container {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .upload-icon {
+      visibility: visible !important;
+    }
+  }
+}
+
+// support aspect ratio
+.aspect-ratio--16x9 {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.aspect-ratio--21x9 {
+  width: 100%;
+  height: 0;
+  padding-bottom: 42.8571429%;
+  position: relative;
+}
+
+// modal style
+
+.modal-header + .modal-body,
+.modal-body + .modal-footer {
+  padding-top: 0;
+}
+
+// form view mode
+.view-mode {
+  &:disabled,
+  &.form-control[readonly] {
+    background-color: #ffffff !important;
+    border: none !important;
+    padding: calc(0.375rem + 1px) 0 !important;
+  }
+
+  .react-select__control--is-disabled {
+    background-color: #ffffff !important;
+    border: none !important;
+    .react-select__value-container {
+      padding: 0 !important;
+      .react-select__single-value--is-disabled {
+        color: #333333 !important;
+      }
+      .react-select__multi-value--is-disabled {
+        margin: 0;
+        .react-select__multi-value__label {
+          background-color: #ffffff;
+          color: #333333;
+          padding: 0;
+          font-size: 100%;
+          &::after {
+            content: ',';
+            margin-right: 0.25rem;
+          }
+        }
+        .react-select__multi-value__remove {
+          display: none !important;
+        }
+        &:last-child {
+          .react-select__multi-value__label {
+            &::after {
+              content: '';
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .react-select__placeholder {
+        display: none !important;
+      }
+      + .react-select__indicators {
+        display: none !important;
+      }
+    }
+  }
+  input[type='checkbox']:disabled {
+    + label {
+      color: #333333 !important;
+    }
+    &:not(:checked) {
+      + label::before {
+        background-color: #ffffff !important;
+      }
+    }
+    &:checked {
+      + label::before {
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+
+// re-select-disabled Style
+
+.react-select__control--is-disabled {
+  .react-select__value-container--is-multi {
+    .react-select__multi-value--is-disabled {
+      .react-select__multi-value__label {
+        padding-right: 6px;
+      }
+      .react-select__multi-value__remove {
+        display: none !important;
+      }
+    }
+  }
+}
+
+// common Style
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.modal-footer .btn {
+  min-width: 80px;
+}
+
+.sticky-top-3 {
+  top: 1rem;
+}
+
+.ck.ck-editor__editable_inline {
+  min-height: 200px;
+}
+
+.text-wrap {
+  word-break: break-all;
+}
+
+.reset-font-size {
+  font-size: 1rem;
+}
+
+.white-space-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.rst__rowLabel {
+  width: 100% !important;
+}
+
+.react-tel-input .form-control {
+  width: inherit !important;
+}
+
+.over-y {
+  @media screen and (min-width: 768px) {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+}
+
+.ck.ck-balloon-panel.ck-balloon-panel_visible {
+  z-index: 2000;
+}
+
+.col-date {
+  min-width: 8rem;
+}
+
+.col-enabled {
+  width: 7em;
+}
+
+.col-name {
+  min-width: 10rem;
+}
+
+.col-truncate {
+  max-width: 20rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-purple {
+  color: purple;
+}

@@ -1,0 +1,64 @@
+//
+// datatable.scss
+//
+
+.react-bootstrap-table-page-btns-ul {
+  float: right !important;
+  margin-bottom: 0;
+}
+
+.react-bootstrap-table-pagination-list .pagination {
+  justify-content: flex-end;
+}
+
+.react-bootstrap-table {
+  .react-bs-table-no-data {
+    position: relative;
+    height: 100px;
+    vertical-align: middle;
+  }
+
+  table {
+    table-layout: auto;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .react-bootstrap-table-pagination-list .pagination {
+    justify-content: flex-start;
+  }
+}
+
+.react-bs-table-sizePerPage-dropdown {
+  .btn {
+    padding: 0.28rem 0.8rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.15rem;
+  }
+}
+
+.react-bootstrap-table th .caret-4-desc:before,
+.react-bootstrap-table th .order-4:before {
+  color: var(--dark);
+  opacity: 1;
+}
+
+.react-bootstrap-table th .caret-4-asc:after,
+.react-bootstrap-table th .order-4:after {
+  color: var(--dark);
+  opacity: 1;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  cursor: default;
+}
+
+// .react-bootstrap-table {
+//   min-height: 370px;
+// }

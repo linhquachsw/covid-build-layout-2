@@ -1,0 +1,92 @@
+/*
+Template Name: Hyper - Responsive Bootstrap 4 Admin Dashboard
+Version: 1.6.0
+Author: CoderThemes
+Email: support@coderthemes.com
+File: Main Css File
+*/
+
+//Core files
+@import '~bootstrap/scss/functions';
+@import 'config/default/variables';
+@import 'config/default/custom-variables';
+@import '~bootstrap/scss/bootstrap';
+
+// Structure
+@import 'custom/structure/general';
+@import 'custom/structure/left-menu';
+@import 'custom/structure/topbar';
+@import 'custom/structure/right-sidebar';
+@import 'custom/structure/page-head';
+@import 'custom/structure/footer';
+@import 'custom/structure//listgroup';
+// horizontal nav
+@import 'custom/structure/horizontal-nav';
+
+//Fonts
+@import 'custom/font/nunito';
+
+//Components
+@import 'custom/base/mixins';
+@import 'custom/base/accordions';
+@import 'custom/base/avatar';
+@import 'custom/base/breadcrumb';
+@import 'custom/base/buttons';
+@import 'custom/base/badge';
+@import 'custom/base/card';
+@import 'custom/base/dropdown';
+@import 'custom/base/forms';
+@import 'custom/base/modal';
+@import 'custom/base/nav';
+@import 'custom/base/pagination';
+@import 'custom/base/popover';
+@import 'custom/base/print';
+@import 'custom/base/progress';
+@import 'custom/base/switch';
+@import 'custom/base/tables';
+@import 'custom/base/utilities';
+@import 'custom/base/widgets';
+@import 'custom/base/social';
+@import 'custom/base/steps';
+@import 'custom/base/preloader';
+
+//Pages
+@import 'custom/page/authentication';
+@import 'custom/page/buttons-demo';
+@import 'custom/page/error';
+@import 'custom/page/faq';
+@import 'custom/page/grid-demo';
+@import 'custom/page/icons-demo';
+@import 'custom/page/maintenance';
+@import 'custom/page/email';
+@import 'custom/page/messages';
+
+// Vendors
+@import '~react-perfect-scrollbar/dist/css/styles.css';
+@import '~react-bootstrap-table-next/dist/react-bootstrap-table2.min';
+@import '~react-day-picker/lib/style.css';
+@import '~react-datepicker/dist/react-datepicker.css';
+// @import '~survey-react/survey.css';
+@import '~select2/dist/css/select2.min.css';
+@import '~filepond/dist/filepond.min.css';
+@import '~filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
+@import '~react-phone-input-2/lib/bootstrap.css';
+
+// Plugins
+@import 'custom/plugins/sortable-tree';
+// @import 'custom/plugins/apexcharts';
+// @import 'custom/plugins/britechart';
+// @import 'custom/plugins/calendar';
+// @import 'custom/plugins/chartjs';
+@import 'custom/plugins/datatable';
+@import 'custom/plugins/datepicker';
+@import 'custom/plugins/draft-wysiwyg';
+@import 'custom/plugins/dropzone';
+@import 'custom/plugins/maps';
+@import 'custom/plugins/metisMenu';
+@import 'custom/plugins/react-select';
+@import 'custom/plugins/slimscroll';
+@import 'custom/plugins/simplemde';
+@import 'custom/plugins/typehead';
+// @import 'custom/plugins/jquery-ui';
+// @import 'custom/plugins/icons';

@@ -1,0 +1,79 @@
+//
+// footer.scss
+//
+
+.footer {
+  max-height: 60px;
+  border-top: 1px solid rgba($gray-600, 0.2);
+  bottom: 0;
+  padding: 19px 30px 20px;
+  // position: absolute;
+  // right: 0;
+  // left: $leftbar-width;
+  color: $gray-600;
+  background: $black;
+  font-size: 0.7rem;
+  text-align: center;
+
+  .footer-links {
+    a {
+      color: $gray-600;
+      margin-left: 1.5rem;
+      transition: all 0.4s;
+      &:hover {
+        color: $orange;
+      }
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .footer {
+    left: 0 !important;
+    text-align: center;
+  }
+}
+
+// Used for account authentication pages
+.footer-alt {
+  left: 0;
+  border: none;
+  text-align: center;
+}
+
+// Layout - Topnav
+[data-layout='topnav'] {
+  .footer {
+    left: 0 !important;
+    padding: 19px 0 20px;
+  }
+  &[data-layout-mode='boxed'] {
+    .footer {
+      max-width: $boxed-layout-width;
+    }
+  }
+}
+
+[data-layout-mode='boxed'] {
+  .footer {
+    border: none;
+    margin: 0 auto;
+    background-color: $body-bg;
+    box-shadow: $shadow;
+    max-width: calc(#{$boxed-layout-width} - #{$leftbar-width});
+  }
+}
+
+[data-layout='detached'] {
+  .footer {
+    left: 0;
+
+    .container-fluid {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+}
