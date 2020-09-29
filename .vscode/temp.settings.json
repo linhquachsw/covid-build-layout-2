@@ -1,0 +1,12 @@
+{
+	"eslint.alwaysShowStatus": true,
+	"eslint.format.enable": true,
+	"css.validate": false,
+	"scss.validate": false,
+	"files.eol": "\n",
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"typescript.validate.enable": false,
+	"javascript.format.enable": false,
+	"javascript.validate.enable": false
+}

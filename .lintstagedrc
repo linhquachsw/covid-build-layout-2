@@ -1,0 +1,5 @@
+{
+	"*!(*test).{js,jsx}": "eslint --cache --fix",
+	"*.{json,scss}": "prettier --write",
+	".*rc": "prettier --write"
+}

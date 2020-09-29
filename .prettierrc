@@ -1,0 +1,13 @@
+{
+	"printWidth": 120,
+	"singleQuote": true,
+	"overrides": [
+		{
+			"files": [".*rc", "*.json", ".*.json"],
+			"options": {
+				"parser": "json",
+				"useTabs": true
+			}
+		}
+	]
+}

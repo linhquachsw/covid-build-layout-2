@@ -1,0 +1,11 @@
+{
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"syler.sass-indented",
+		"mgmcdermott.vscode-language-babel",
+		"dsznajder.es7-react-js-snippets",
+		"jpoissonnier.vscode-styled-components",
+		"mhutchie.git-graph"
+	]
+}
